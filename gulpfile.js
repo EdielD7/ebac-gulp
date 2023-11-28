@@ -29,9 +29,9 @@ function comprimeJS() {
 }
 
 exports.default = function () {
-	gulp.watch('./source/styles/main.scss', { ingoreInitial: false }, gulp.series(compilaSass));
-	gulp.watch('./source/images/*', { ingoreInitial: false }, gulp.series(comprimeImagens));
-	gulp.watch('./source/scripts/*.js', { ingoreInitial: false }, gulp.series(comprimeJS));
+	gulp.watch('./source/styles/main.scss', { ignoreInitial: false }, gulp.series(compilaSass));
+	gulp.watch('./source/images/*', { ignoreInitial: false }, gulp.series(comprimeImagens));
+	gulp.watch('./source/scripts/*.js', { ignoreInitial: false }, gulp.series(comprimeJS));
 }
 
 exports.img = comprimeImagens;
